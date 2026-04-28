@@ -62,10 +62,10 @@ df.show(1)
 
 df.write \
     .format("jdbc") \
-    .option("url", "jdbc:postgresql://192.168.114.31:5432/datas") \
+    .option("url", "jdbc:postgresql://192.168.00.00:5432/datas") \
     .option("dbtable", "test_spark_table_filtered") \
-    .option("user", "admin") \
-    .option("password", "rahasia2025") \
+    .option("user", "00") \
+    .option("password", "00") \
     .option("driver", "org.postgresql.Driver") \
     .option("batchsize", 1000)\
     .mode("overwrite") \
